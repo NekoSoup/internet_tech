@@ -1,0 +1,140 @@
+@import url(reset.css);
+
+body {
+    background: url("../img/bg.jpg");
+}
+
+.page {
+    height: 100%;
+}
+
+.header {
+    width: 80%;
+    height: 100px;
+    background: linear-gradient(90deg, #2e61f1 0%,#E2EBF2 100%);
+    margin: 0 0 0 10%;
+    border-radius: 0 0 30px 30px;
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+}
+
+.left {
+    width: 70%;
+}
+
+.right {
+    width: 40%;
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav a {
+    font-size: 28px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration:none;
+    color: #efb710;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.authorization {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.authorization a {
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration:none;
+    color: #efb710;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.content {    
+    width: 80%;
+    margin: 60px 10% 0 10%;
+    min-height: 80vh;
+}
+
+.forma {
+    width: 400px;
+    height: 600px;
+    background: linear-gradient(315deg, #e2ebf2c5 0%,#2e61f1 100%);
+    border-radius: 30px;
+    margin: 0 0 0 10%;
+    padding: 20px 0;
+}
+
+.forma form {
+    margin: 0px 5%;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+input[type="text"], input[type="number"], input[type="email"] {
+    margin-top: 10px;
+    width: 90%;
+
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    background-color: transparent;
+    height: 24px;
+    font-size: 18px;
+    font-family: monospace;
+    outline: none;
+    color: #ffffff;
+}
+
+input[type="reset"], input[type="submit"] {
+    width: 120px;
+    height: 36px;
+    font-size: 18px;
+    font-family: monospace;
+    border-radius: 9px;
+    background-color: #4674f9;
+    color: #fff;
+}
+
+span {
+    color: red;
+}
+
+.forma form div {
+    font-size: 18px;
+    font-family: monospace;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px #2e61f1;
+}
+
+.footer {
+    width: 80%;
+    height: 50px;
+    background: linear-gradient(225deg, #e2ebf2c5 0%,#2e61f1 100%);
+    border-radius: 30px 30px 0px 0px;
+    margin: 0 0 0 10%;
+
+    font-size: 24px;
+    font-family: monospace;
+    font-weight: bold;
+    text-decoration:none;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
