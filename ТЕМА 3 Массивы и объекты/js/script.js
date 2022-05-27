@@ -88,17 +88,22 @@ const numbers6 = document.querySelector('#input6');
 const result6 = document.querySelector('#result6');
 
 let size;
+let size1;
+let size2;
 function getWithSpaces(arr){
     size = arr.join(' ').length;
+    size1 = arr.length;
     return arr.map(function (element){
+        size2 = element.replace(/[^a-zа-яё]/gi, '').length;
         return element.replace(/[^a-zа-яё]/gi, '');
     }).join(' ');
+
 }
 
 numbers6.addEventListener("input", () => {
     newArray = getWithSpaces(numbers6.value.split(', '));
     result6.textContent = '"' + newArray + '", '  
-    + size;
+    + (size - (size1 + size2));
 })
 
 //---------------------------------------------------
@@ -146,10 +151,10 @@ function getAvgGlucose(arr){
             temp += parseFloat(element);
         })
         console.log(temp);
-        return temp /= arr.length;
+        return temp = temp / arr.length;
     }
-
-    return avg(arr);
+    return Math.round(avg(arr) * Math.pow(10, 1)) / Math.pow(10, 1);
+    //return avg(arr);
 }
 
 numbers10.addEventListener("input", () => {
